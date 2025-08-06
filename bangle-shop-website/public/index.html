@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bangle Shop</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; }
+    img { width: 150px; height: auto; margin: 10px; }
+  </style>
+</head>
+<body>
+  <h1>My Sister’s Bangle Shop</h1>
+  <h2>Premium Bangles</h2>
+  <div id="premium"></div>
+  <h2>Special Bangles</h2>
+  <div id="special"></div>
+  <h2>Regular Bangles</h2>
+  <div id="regular"></div>
+  <h3>Contact Us: 9876543210</h3>
+
+  <script>
+    fetch('/api/bangles')
+      .then(res => res.json())
+      .then(data => {
+        data.forEach(item => {
+          const img = `<div><img src="${item.imageUrl}" /><p>Price: ₹${item.price}</p></div>`;
+          document.getElementById(item.category.toLowerCase()).innerHTML += img;
+        });
+      });
+  </script>
+</body>
+</html>
