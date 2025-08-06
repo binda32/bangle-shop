@@ -3,40 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>lakshmi thread Bangle Shop</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Lakshmi Thread Bangle Shop</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
   <header>
-    <h1>lakshmi thread Bangle Shop</h1>
-    <nav>
+    <nav class="navbar">
+      <div class="logo">Lakshmi Thread</div>
       <ul>
-        <li><a href="#premium">Premium Bangles</a></li>
-        <li><a href="#special">Special Bangles</a></li>
-        <li><a href="#regular">Regular Bangles</a></li>
+        <li><a href="#premium">Premium</a></li>
+        <li><a href="#special">Special</a></li>
+        <li><a href="#regular">Regular</a></li>
       </ul>
     </nav>
+    <div class="hero">
+      <h1>Elegant Bangles for Every Occasion</h1>
+      <p>Discover Premium, Special & Regular collections</p>
+    </div>
   </header>
 
   <main>
-    <section id="premium">
+    <section id="premium" class="section">
       <h2>Premium Bangles</h2>
-      <div class="gallery"></div>
+      <div class="gallery" data-category="Premium"></div>
     </section>
-
-    <section id="special">
+    <section id="special" class="section">
       <h2>Special Bangles</h2>
-      <div class="gallery"></div>
+      <div class="gallery" data-category="Special"></div>
     </section>
-
-    <section id="regular">
+    <section id="regular" class="section">
       <h2>Regular Bangles</h2>
-      <div class="gallery"></div>
+      <div class="gallery" data-category="Regular"></div>
     </section>
   </main>
 
   <footer>
-    <p>Contact Us: 9876543210</p>
+    <p>Contact Us: 9876543210 • Visit us in Visakhapatnam</p>
   </footer>
+
+  <script src="/gallery.js"></script>
 </body>
 </html>
