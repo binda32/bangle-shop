@@ -6,7 +6,7 @@
 </head>
 <body>
   <h2>Upload New Bangle</h2>
-  <form id="uploadForm">
+  <form id="uploadForm" method="POST" enctype="multipart/form-data">
     <input type="file" name="photo" required><br>
     <input type="text" name="price" placeholder="Price" required><br>
     <select name="category">
@@ -53,3 +53,4 @@
   </script>
 </body>
 </html>
+
